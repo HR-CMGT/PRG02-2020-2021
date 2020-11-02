@@ -1,0 +1,17 @@
+td {
+    padding: 0 10px;
+}
+
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+}
+
+tr.odd {
+    background-color: lightgrey;
+}
+
+/* This would be the way to go without PHP */
+tbody tr:nth-child(odd) {
+    /*background-color: lightgrey;*/
+}
