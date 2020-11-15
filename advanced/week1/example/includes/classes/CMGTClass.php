@@ -5,9 +5,9 @@
  */
 class CMGTClass
 {
-    public $name = "Advanced Group";
-    public $slogan = "We rock!";
-    private $students = [];
+    public string $name = "Advanced Group";
+    public string $slogan = "We rock!";
+    private array $students = [];
 
     /**
      * @return array
@@ -20,9 +20,9 @@ class CMGTClass
     /**
      * Retrieve raw array value & pass to Student object
      *
-     * @param $value
+     * @param $value array
      */
-    public function addStudent($value): void
+    public function addStudent(array $value): void
     {
         $this->students[] = new Student($value['name'], $value['number'], $value['classNumber']);
     }

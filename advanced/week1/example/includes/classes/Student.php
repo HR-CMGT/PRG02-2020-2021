@@ -5,9 +5,9 @@
  */
 class Student
 {
-    public $name;
-    public $number;
-    public $classNumber;
+    public string $name;
+    public string $number;
+    public string $classNumber;
 
     /**
      * Student constructor.
@@ -15,7 +15,7 @@ class Student
      * @param $number
      * @param $classNumber
      */
-    public function __construct($name, $number, $classNumber)
+    public function __construct(string $name, string $number, string $classNumber)
     {
         $this->name = $name;
         $this->number = $number;
