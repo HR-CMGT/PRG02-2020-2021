@@ -19,7 +19,7 @@ Onderwerpen die aan bod zullen komen zijn
 	- login, authentication
 	- sql injections, cross site scripting
 
-
+Is bovenstaande je al bekend? Volg dan de [Advanced cursus](advanced)
 
 ## Werkomgeving
 
@@ -42,8 +42,8 @@ direct mee aan de slag kunt gaan in het huiswerk. Een eerste opzet van de code s
 Wekelijk wordt er ook een finished folder toegevoegd met de antwoorden. Door een ```git pull``` te doen, 
 kan je deze per week binnenhalen.  
  
-- [Week 1](week1/README.md)
-- [Week 2](week2/README.md)
-- [Week 3](week3/README.md)
-- [Week 4](week4/README.md)
-- [Week 5](week5/README.md)
+- [Week 1](week1)
+- [Week 2](week2)
+- [Week 3](week3)
+- [Week 4](week4)
+- [Week 5](week5)
