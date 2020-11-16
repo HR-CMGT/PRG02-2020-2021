@@ -11,7 +11,7 @@
     <span class="error"><?= $error; ?></span>
 <?php endif; ?>
 
-<?php if (isset($students)): ?>
+<?php if (isset($students) && isset($totalStudents)): ?>
     <table>
         <thead>
         <tr>
@@ -26,11 +26,11 @@
         </tr>
         </tfoot>
         <tbody>
-        <?php foreach($students as $student): ?>
+        <?php foreach ($students as $student): ?>
             <tr>
-                <td><?= $student->number;?></td>
-                <td><?= $student->classNumber;?></td>
-                <td><?= $student->name;?></td>
+                <td><?= $student->number; ?></td>
+                <td><?= $student->classNumber; ?></td>
+                <td><?= $student->name; ?></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
