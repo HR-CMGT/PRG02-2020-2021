@@ -59,8 +59,8 @@ Je kunt voor PHPStorm een [account](https://www.jetbrains.com/shop/eform/student
 Huiswerk zal per week worden aangevuld. Ook de voorbeelden uit de les zullen hier te vinden zijn
 als naslagwerk voor de opdrachten.
  
-- [Week 1](week1/README.md)
-- [Week 2](week2/README.md)
-- [Week 3](week3/README.md)
-- [Week 4](week4/README.md)
-- [Week 5](week5/README.md)
+- [Week 1](week1)
+- [Week 2](week2)
+- [Week 3](week3)
+- [Week 4](week4)
+- [Week 5](week5)
