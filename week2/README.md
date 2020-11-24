@@ -37,7 +37,7 @@ Wanneer op verzenden geklikt wordt, gaat de bezoeker naar een andere pagina waar
 
 ## Opdracht 2.4
 
-- Toon de datum van vandaag in een webpagina met het format "31-12-19 10:00"
+- Toon de datum van vandaag in een webpagina met het format "31-12-20 10:00"
 - Toon de datum als hierboven, maar dan 1 week eerder
 - Toon het verschil in dagen tussen 5 februari en 12 augustus.
 - Toon het aantal nachten slapen tot je volgende verjaardag
