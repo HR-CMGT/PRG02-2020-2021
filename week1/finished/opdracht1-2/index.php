@@ -2,18 +2,22 @@
 // Get the number for the current hour (24 clock)
 $hours = date('G');
 
+
 // Decide the text depending on current time.
 
 // It is morning when the hours od the day contain:
 // 00, 01, 02, 03, 04, 05
 if ($hours < 6) {
     $period = 'nacht';
-} // 06, 07, 08, 09, 10 ,11
+}
+// 06, 07, 08, 09, 10 ,11
 elseif ($hours < 12) {
     $period = 'morgen';
-} elseif ($hours < 18) {
+}
+elseif ($hours < 18) {
     $period = 'middag';
-} else {
+}
+else {
     $period = 'navond';
 }
 ?>
@@ -27,12 +31,12 @@ elseif ($hours < 12) {
     <title>Programmeren 2 - Week 1 - Opdracht 1.2</title>
 </head>
 <body>
-<h1>Opdracht 1.2</h1>
-<hr/>
+    <h1>Opdracht 1.2</h1>
+    <hr/>
 
-<h2>Begroeting op basis van het moment van de dag</h2>
-<p>
-    <?= 'Goede' . $period; ?>
-</p>
+    <h2>Begroeting op basis van het moment van de dag</h2>
+    <p>
+        Goede<?= $period ?>
+    </p>
 </body>
 </html>

@@ -5,58 +5,58 @@ $birthday = "0724";
 $constellations = [
     [
         "startDate" => "0121",
-        "endDate" => "0218",
-        "name" => "Waterman"
+        "endDate"   => "0218",
+        "name"      => "Waterman"
     ],
     [
         "startDate" => "0219",
-        "endDate" => "0320",
-        "name" => "Vissen"
+        "endDate"   => "0320",
+        "name"      => "Vissen"
     ],
     [
         "startDate" => "0321",
-        "endDate" => "0420",
-        "name" => "Ram"
+        "endDate"   => "0420",
+        "name"      => "Ram"
     ],
     [
         "startDate" => "0421",
-        "endDate" => "0521",
-        "name" => "Stier"
+        "endDate"   => "0521",
+        "name"      => "Stier"
     ],
     [
         "startDate" => "0522",
-        "endDate" => "0621",
-        "name" => "Tweeling"
+        "endDate"   => "0621",
+        "name"      => "Tweeling"
     ],
     [
         "startDate" => "0622",
-        "endDate" => "0723",
-        "name" => "Kreeft"
+        "endDate"   => "0723",
+        "name"      => "Kreeft"
     ],
     [
         "startDate" => "0724",
-        "endDate" => "0823",
-        "name" => "Leeuw"
+        "endDate"   => "0823",
+        "name"      => "Leeuw"
     ],
     [
         "startDate" => "0824",
-        "endDate" => "0923",
-        "name" => "Maagd"
+        "endDate"   => "0923",
+        "name"      => "Maagd"
     ],
     [
         "startDate" => "0924",
-        "endDate" => "1023",
-        "name" => "Weegschaal"
+        "endDate"   => "1023",
+        "name"      => "Weegschaal"
     ],
     [
         "startDate" => "1024",
-        "endDate" => "1122",
-        "name" => "Schorpioen"
+        "endDate"   => "1122",
+        "name"      => "Schorpioen"
     ],
     [
         "startDate" => "1123",
-        "endDate" => "1222",
-        "name" => "Boogschutter"
+        "endDate"   => "1222",
+        "name"      => "Boogschutter"
     ]
 //    ,
 //    [
@@ -97,10 +97,8 @@ $myConstellation = getConstellationForBirthday($birthday, $constellations);
     <meta charset="utf-8"/>
 </head>
 <body>
-<h1>Opdracht 1.4 - Sterrenbeeld</h1>
-<hr/>
-<p>
-    Mijn sterrenbeeld is: <?= $myConstellation; ?>
-</p>
+    <p>
+        Mijn sterrenbeeld is: <?= $myConstellation; ?>
+    </p>
 </body>
 </html>
