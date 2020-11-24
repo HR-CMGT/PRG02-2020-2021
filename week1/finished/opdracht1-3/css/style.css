@@ -1,0 +1,16 @@
+td {
+    padding: 0 10px;
+}
+
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+}
+
+tr.odd {
+    background-color: lightgrey;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
