@@ -13,5 +13,5 @@ tr.odd {
 
 /* This would be the way to go without PHP */
 tbody tr:nth-child(odd) {
-    /*background-color: lightgrey;*/
+    background-color: lightgrey;
 }
