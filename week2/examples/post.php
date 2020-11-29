@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
 <?php if (isset($titleError)) { ?>
     <p><?= $titleError; ?></p>
 <?php } ?>
+    <h2>yo</>
 <form method="post" action="<?= $_SERVER['PHP_SELF']; ?>">
     <div>
         <label for="title">Titel</label>
