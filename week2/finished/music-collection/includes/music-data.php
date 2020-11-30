@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bpikaar
- * Date: 21/11/2017
- * Time: 13:29
- */
 $musicAlbums =
     [
         [

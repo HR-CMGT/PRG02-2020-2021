@@ -59,11 +59,12 @@ if (isset($_POST['submit']))
                 <div class="data-field">
                     <label for="artist">Artist</label>
                     <input id="artist" type="text" name="artist"
-                           value="<?= isset($artist) ? $artist : '' ?>"/>
+                           value="<?php if (isset($artist)) { echo $artist; } ?>"/>
                 </div>
                 <div class="data-field">
                     <label for="album">Album</label>
-                    <input id="album" type="text" name="album" value=""/>
+                    <input id="album" type="text" name="album"
+                           value="<?= isset($album) ? $album : '' ?>"/>
                 </div>
                 <div class="data-field">
                     <label for="genre">Genre</label>

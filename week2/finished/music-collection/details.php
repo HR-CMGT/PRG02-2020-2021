@@ -1,5 +1,6 @@
 <?php
 // Include data (all albums)
+/** @var array $musicAlbums */
 require_once 'includes/music-data.php';
 
 // IF index is not present in url or value is empty
@@ -7,6 +8,7 @@ if(!isset($_GET['index']) || $_GET['index'] == '')
 {
     // redirect to index.php
     header('Location: index.php');
+    exit;
 }
 // Get index of album from url (GET)
 $index = $_GET['index'];

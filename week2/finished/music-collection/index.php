@@ -32,6 +32,7 @@ require_once 'includes/music-data.php';
             </tr>
         </tfoot>
         <tbody>
+        <?php /** @var array $musicAlbums */ ?>
         <?php foreach ($musicAlbums as $index => $album) { ?>
             <tr>
                 <td><?= $index + 1 ?></td>
