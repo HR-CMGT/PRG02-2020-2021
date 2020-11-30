@@ -4,7 +4,6 @@
 - MySQL
     - DELETE
     - INSERT INTO
-    - UPDATE
 
 ## Opdracht 4.1
 
