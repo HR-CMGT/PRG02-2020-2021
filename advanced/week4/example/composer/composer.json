@@ -1,0 +1,14 @@
+{
+    "name": "antwanvdm/composerdemo",
+    "description": "Demo for school",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "AutoLoading\\": "includes/AutoLoading"
+        }
+    }
+}

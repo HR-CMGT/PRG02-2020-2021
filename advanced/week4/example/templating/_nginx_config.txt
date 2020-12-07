@@ -1,0 +1,13 @@
+location /week4/example/templating/ {
+    try_files $uri @templating;
+}
+
+location @templating {
+    if ($request_uri ~* "([^/]*$)") {
+        set $last_path_component $1;
+    }
+    if ($request_uri ~* "([^/]*)([?].*)" ) {
+        set $last_path_component $1;
+    }
+    rewrite ^/(.*)$ /week4/example/templating/index.php?_url=$last_path_component last;
+}

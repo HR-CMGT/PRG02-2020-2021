@@ -12,4 +12,4 @@
 Pas de theorie van vandaag toe op de muziekcollectie opdracht en bouw de opdracht uit:
 - Verwerk composer om de autoloader toe te passen in je code
 - Verwerk de templating kennis door de voorbeeld code uit examples/templating toe te passen
-- Maak opdracht 5.1, 5.2, 5.3 & 5.4 uit reguliere les zodat je opdracht een login en logout functionaliteit heeft
+- Maak opdracht 5.2, 5.3, 5.4 & 5.5 uit reguliere les zodat je opdracht een login en logout functionaliteit heeft
