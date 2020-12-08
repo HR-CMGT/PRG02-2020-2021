@@ -15,7 +15,7 @@ de database. (Je zal zien dat deze pagina voor een zeer groot deel overeenkomt m
 Ook zal de pagina voorzien moeten zijn van validatie. Het controleren van de input-velden
 gebeurt dmv een postback (tip: if(isset())
 
-### Opdracht 5.2 (extra)
+## Opdracht 5.2 (extra)
 Bij een update (edit) van het plaatje moet het oude plaatje eerst
 verwijderd worden en de nieuwe geüpload worden en de link aangepast in de database.
 
