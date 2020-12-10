@@ -3,8 +3,6 @@
 ## Onderwerpen
 
 - Database update query
-- Login
-- Sessions
 
 ## Opdracht 5.1
 
