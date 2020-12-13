@@ -48,7 +48,7 @@ mysqli_close($db);
     <tbody>
     <?php foreach ($musicAlbums as $musicAlbum) { ?>
         <tr>
-            <td class="image"><img src="<?= $musicAlbum['image'] ?>" alt="<?= $musicAlbum['name'] ?>"/></td>
+            <td class="image"><img src="images/<?= $musicAlbum['image'] ?>" alt="<?= $musicAlbum['name'] ?>"/></td>
             <td><?= $musicAlbum['id'] ?></td>
             <td><?= $musicAlbum['artist'] ?></td>
             <td><?= $musicAlbum['name'] ?></td>
