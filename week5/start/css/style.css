@@ -1,0 +1,26 @@
+label {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+}
+
+/* This would be the way to go without PHP */
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    padding: 0 10px;
+}
+td.image img {
+    width: 50px;
+    height: 50px;
+}
+
+.errors {
+    color: red;
+}

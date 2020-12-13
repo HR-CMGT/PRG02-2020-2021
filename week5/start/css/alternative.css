@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+a {
+    font-size: 12px;
+    color: grey;
+}
+main {
+    width: 700px;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+}
+album {
+    width: 200px;
+    height: 230px;
+    margin: 10px;
+    float: left;
+}
+
+.albums {
+    width: 660px;
+    margin: 20px auto 0;
+}
+
+
+.cover img {
+    width: 200px;
+    height: 200px;
+}
+
+.links a {
+    display: inline-block;
+    width: 200px;
+    clear: both;
+    text-align: center;
+}
