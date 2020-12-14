@@ -6,10 +6,10 @@ if (isset($_POST['submit'])) {
     require_once "includes/image-helpers.php";
 
     //Postback with the data showed to the user, first retrieve data from 'Super global'
-    $name   = mysqli_escape_string($db, $_POST['name']);
+    $name = mysqli_escape_string($db, $_POST['name']);
     $artist = mysqli_escape_string($db, $_POST['artist']);
-    $genre  = mysqli_escape_string($db, $_POST['genre']);
-    $year   = mysqli_escape_string($db, $_POST['year']);
+    $genre = mysqli_escape_string($db, $_POST['genre']);
+    $year = mysqli_escape_string($db, $_POST['year']);
     $tracks = mysqli_escape_string($db, $_POST['tracks']);
 
     //Require the form validation handling
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 
     //Special check for add form only
     if ($_FILES['image']['error'] == 4) {
-        $errors[] = 'Image cannot be empty';
+        $errors['image'] = 'Image cannot be empty';
     }
 
     if (empty($errors)) {
@@ -27,14 +27,13 @@ if (isset($_POST['submit'])) {
         //Save the record to the database
         $query = "INSERT INTO albums (name, artist, genre, year, tracks, image)
                   VALUES ('$name', '$artist', '$genre', $year, $tracks, '$image')";
-        $result = mysqli_query($db, $query)
-            or die('Error: '.$query);
+        $result = mysqli_query($db, $query) or die('Error: ' . $query);
 
         if ($result) {
             header('Location: index.php');
             exit;
         } else {
-            $errors[] = 'Something went wrong in your database query: ' . mysqli_error($db);
+            $errors['db'] = 'Something went wrong in your database query: ' . mysqli_error($db);
         }
 
         //Close connection
@@ -51,9 +50,12 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
 <h1>Create album</h1>
+<?php if (isset($errors['db'])) { ?>
+    <div><span class="errors"><?= $errors['db']; ?></span></div>
+<?php } ?>
 
 <!-- enctype="multipart/form-data" no characters will be converted -->
- <form action="" method="post" enctype="multipart/form-data">
+<form action="" method="post" enctype="multipart/form-data">
     <div class="data-field">
         <label for="artist">Artist</label>
         <input id="artist" type="text" name="artist" value="<?= isset($artist) ? htmlentities($artist) : '' ?>"/>
@@ -82,6 +84,7 @@ if (isset($_POST['submit'])) {
     <div class="data-field">
         <label for="image">Image</label>
         <input type="file" name="image" id="image"/>
+        <span class="errors"><?= isset($errors['image']) ? $errors['image'] : '' ?></span>
     </div>
     <div class="data-submit">
         <input type="submit" name="submit" value="Save"/>

@@ -8,19 +8,18 @@ if (isset($_POST['submit'])) {
     // To remove the image we need to query the file name from the db.
     // Get the record from the database result
     $query = "SELECT * FROM albums WHERE id = " . mysqli_escape_string($db, $_POST['id']);
-    $result = mysqli_query($db, $query) or die ('Error: ' . $query );
+    $result = mysqli_query($db, $query) or die ('Error: ' . $query);
 
     $album = mysqli_fetch_assoc($result);
 
-    if(!empty($album['image'])) {
+    if (!empty($album['image'])) {
         deleteImageFile($album['image']);
     }
 
     // DELETE DATA
     // Remove the album data from the database
     $query = "DELETE FROM albums WHERE id = " . mysqli_escape_string($db, $_POST['id']);
-
-    mysqli_query($db, $query) or die ('Error: '.mysqli_error($db));
+    mysqli_query($db, $query) or die ('Error: ' . mysqli_error($db));
 
     //Close connection
     mysqli_close($db);
@@ -29,19 +28,17 @@ if (isset($_POST['submit'])) {
     header("Location: index.php");
     exit;
 
-} else if(isset($_GET['id'])) {
+} else if (isset($_GET['id'])) {
     //Retrieve the GET parameter from the 'Super global'
     $albumId = $_GET['id'];
 
     //Get the record from the database result
     $query = "SELECT * FROM albums WHERE id = " . mysqli_escape_string($db, $albumId);
-    $result = mysqli_query($db, $query) or die ('Error: ' . $query );
+    $result = mysqli_query($db, $query) or die ('Error: ' . $query);
 
-    if(mysqli_num_rows($result) == 1)
-    {
+    if (mysqli_num_rows($result) == 1) {
         $album = mysqli_fetch_assoc($result);
-    }
-    else {
+    } else {
         // redirect when db returns no result
         header('Location: index.php');
         exit;
@@ -64,13 +61,13 @@ if (isset($_POST['submit'])) {
     <title>Delete - <?= $album['name'] ?></title>
 </head>
 <body>
-    <h2>Delete - <?= $album['name'] ?></h2>
-    <form action="" method="post">
-        <p>
-            Weet u zeker dat u het album "<?= $album['name']?>" wilt verwijderen?
-        </p>
-        <input type="hidden" name="id" value="<?= $album['id'] ?>"/>
-        <input type="submit" name="submit" value="Verwijderen"/>
-    </form>
+<h2>Delete - <?= $album['name'] ?></h2>
+<form action="" method="post">
+    <p>
+        Weet u zeker dat u het album "<?= $album['name'] ?>" wilt verwijderen?
+    </p>
+    <input type="hidden" name="id" value="<?= $album['id'] ?>"/>
+    <input type="submit" name="submit" value="Verwijderen"/>
+</form>
 </body>
 </html>
