@@ -1,0 +1,20 @@
+{
+    "name": "antwan/music_collection",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "antwan",
+            "email": "moora@hr.nl"
+        }
+    ],
+    "config": {
+        "vendor-dir": "includes/vendor"
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "System\\": "includes/classes/System"
+        }
+    }
+}
