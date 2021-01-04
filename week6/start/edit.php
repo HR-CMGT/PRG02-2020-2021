@@ -88,27 +88,27 @@ mysqli_close($db);
 <form action="" method="post" enctype="multipart/form-data">
     <div class="data-field">
         <label for="artist">Artist</label>
-        <input id="artist" type="text" name="artist" value="<?= $album['artist'] ?>"/>
+        <input id="artist" type="text" name="artist" value="<?= htmlentities($album['artist']) ?>"/>
         <span class="errors"><?= isset($errors['artist']) ? $errors['artist'] : '' ?></span>
     </div>
     <div class="data-field">
         <label for="name">Album</label>
-        <input id="name" type="text" name="name" value="<?= $album['name'] ?>"/>
+        <input id="name" type="text" name="name" value="<?= htmlentities($album['name']) ?>"/>
         <span class="errors"><?= isset($errors['name']) ? $errors['name'] : '' ?></span>
     </div>
     <div class="data-field">
         <label for="genre">Genre</label>
-        <input id="genre" type="text" name="genre" value="<?= $album['genre'] ?>"/>
+        <input id="genre" type="text" name="genre" value="<?= htmlentities($album['genre']) ?>"/>
         <span class="errors"><?= isset($errors['genre']) ? $errors['genre'] : '' ?></span>
     </div>
     <div class="data-field">
         <label for="year">Year</label>
-        <input id="year" type="text" name="year" value="<?= $album['year'] ?>"/>
+        <input id="year" type="text" name="year" value="<?= htmlentities($album['year']) ?>"/>
         <span class="errors"><?= isset($errors['year']) ? $errors['year'] : '' ?></span>
     </div>
     <div class="data-field">
         <label for="tracks">Tracks</label>
-        <input id="tracks" type="number" name="tracks" value="<?= $album['tracks'] ?>"/>
+        <input id="tracks" type="number" name="tracks" value="<?= htmlentities($album['tracks']) ?>"/>
         <span class="errors"><?= isset($errors['tracks']) ? $errors['tracks'] : '' ?></span>
     </div>
     <div class="data-field">
