@@ -83,7 +83,7 @@ mysqli_close($db);
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-<h1>Edit "<?= $album['artist'] . ' - ' . $album['name'] ?>"</h1>
+<h1>Edit "<?= htmlentities($album['artist']) . ' - ' . htmlentities($album['name']) ?>"</h1>
 
 <form action="" method="post" enctype="multipart/form-data">
     <div class="data-field">
