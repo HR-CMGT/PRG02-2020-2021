@@ -1,0 +1,84 @@
+td {
+    padding: 0 10px;
+}
+
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* This would be the way to go without PHP */
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+}
+
+.errors {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+td.image img {
+    width: 50px;
+    height: 50px;
+}
+
+#container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#alternative h1 {
+    text-align: center;
+}
+
+#alternative a {
+    font-size: 12px;
+    color: grey;
+}
+
+#alternative .intro-links {
+    text-align: center;
+}
+
+#alternative .intro-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+#alternative .albums {
+    width: 660px;
+    margin: 20px auto 0;
+}
+
+#alternative .album {
+    width: 200px;
+    height: 230px;
+    margin: 10px;
+    float: left;
+}
+
+#alternative .cover img {
+    width: 200px;
+    height: 200px;
+}
+
+#alternative .links a {
+    display: inline-block;
+    width: 200px;
+    clear: both;
+    text-align: center;
+}
+
+#login label {
+    width: 100px;
+}
