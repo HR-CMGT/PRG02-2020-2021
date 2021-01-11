@@ -13,7 +13,7 @@ Maak de loginpagina werkend zodat bij een foutieve login een error massage getoo
 dezelfde pagina) en bij een goede combinatie van email en password ‘login succes’ getoond
 wordt.
 
-Tip: kijk de volgende video’s van de php cursus op Pluralsight:
+Tip: kijk de [volgende video’s van de php cursus op Pluralsight](https://app.pluralsight.com/course-player?clipId=ded5d9cd-283a-4320-8f24-f425ba6effce):
 - PHP Password Hashing API
 - Storing Passwords
 - Validating Passwords
