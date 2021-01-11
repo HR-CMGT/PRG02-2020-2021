@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<psalm
+    autoloader="app/config/settings.php"
+    errorLevel="5"
+    allowPhpStormGenerics="true"
+    hoistConstants="true"
+    useDocblockPropertyTypes="true"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="public" />
+        <directory name="app" />
+        <directory name="tests" />
+        <ignoreFiles>
+            <directory name="app/vendor" />
+        </ignoreFiles>
+    </projectFiles>
+    <globals>
+        <var name="email" type="string|boolean" />
+        <var name="success" type="string|boolean" />
+        <var name="album" type="System\Databases\Objects\Album|boolean" />
+        <var name="totalAlbums" type="int" />
+        <var name="pageTitle" type="string" />
+    </globals>
+    <issueHandlers>
+        <UndefinedThisPropertyAssignment errorLevel="suppress" />
+        <PossiblyInvalidPropertyFetch errorLevel="suppress" />
+        <PropertyNotSetInConstructor errorLevel="suppress" />
+        <UnresolvableInclude errorLevel="suppress" />
+    </issueHandlers>
+</psalm>

@@ -1,0 +1,38 @@
+{
+    "name": "antwan/music_collection",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "antwan",
+            "email": "moora@hr.nl"
+        }
+    ],
+    "config": {
+        "vendor-dir": "app/vendor"
+    },
+    "require": {
+        "php" : "^7.4",
+        "ext-pdo": "*",
+        "ext-fileinfo": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4",
+        "vimeo/psalm": "^4.2",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "System\\": "app/classes/System"
+        }
+    },
+    "scripts": {
+        "test": "export XDEBUG_MODE=coverage && phpunit",
+        "php-cs-fixer:dry": "php-cs-fixer fix --diff --dry-run",
+        "php-cs-fixer:fix": "php-cs-fixer fix",
+        "psalm:init": "psalm --init",
+        "psalm:check": "psalm --show-info=true",
+        "psalm:fix:dry": "psalm --alter --issues=MissingReturnType,MismatchingDocblockReturnType --dry-run",
+        "psalm:fix": "psalm --alter --issues=MissingReturnType,MismatchingDocblockReturnType"
+    }
+}

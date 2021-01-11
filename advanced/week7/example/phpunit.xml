@@ -1,0 +1,16 @@
+<phpunit bootstrap="tests/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="converter">
+            <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="coverage-html" target="./app/logs/phpunit-coverage"
+             lowUpperBound="50" highLowerBound="80" showUncoveredFiles="false" />
+    </logging>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./tests</directory>
+        </whitelist>
+    </filter>
+</phpunit>
