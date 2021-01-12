@@ -44,14 +44,15 @@ Mis je basiskennis? Vergeet dan de reguliere les niet!
 - Magic methods
 - Chaining
 - Basic unit testing
+- Code quality tools (psalm / php cs fixer)
 
 ### W8 (last week):
-- Code delen
+- Database relations
 - Vrije invulling op aanvraag
 - Oefententamen
 
 ## Werkomgeving
-- [PHPStorm](https://www.jetbrains.com/phpstorm/download/)
+- [phpStorm](https://www.jetbrains.com/phpstorm/download/)
 Je kunt voor PHPStorm een [account](https://www.jetbrains.com/shop/eform/students) krijgen met je HR-email.
 - Vagrant box [Volg de README voor installatie instructies](https://github.com/antwanvdm/php7-vagrant).
 
