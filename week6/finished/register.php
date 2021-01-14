@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
     if (empty($errors)) {
         $password = password_hash($password, PASSWORD_DEFAULT);
 
-        $query = "INSERT INTO users (email, password) VALUE('$email', '$password')";
+        $query = "INSERT INTO users (email, password) VALUES('$email', '$password')";
         $result = mysqli_query($db, $query)
         or die('Error: ' . $query);
 
