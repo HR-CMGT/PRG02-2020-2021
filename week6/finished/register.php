@@ -31,8 +31,7 @@ if (isset($_POST['submit'])) {
         $password = password_hash($password, PASSWORD_DEFAULT);
 
         $query = "INSERT INTO users (email, password) VALUES('$email', '$password')";
-        $result = mysqli_query($db, $query)
-        or die('Error: ' . $query);
+        $result = mysqli_query($db, $query) or die('Error: ' . $query);
 
         if ($result) {
             header('Location: index.php');
