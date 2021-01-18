@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
     require_once "includes/database.php";
 
     //Postback with the data showed to the user, first retrieve data from 'Super global'
-    $email = mysqli_real_escape_string($db, $_POST['email']);
+    $email = mysqli_escape_string($db, $_POST['email']);
     $password = $_POST['password'];
 
     $errors = [];
