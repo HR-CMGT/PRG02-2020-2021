@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
             header('Location: index.php');
             exit;
         } else {
-            $errors[] = 'Something went wrong in your database query: ' . mysqli_error($db);
+            $errors['db'] = 'Something went wrong in your database query: ' . mysqli_error($db);
         }
 
         //Close connection
@@ -47,31 +47,29 @@ if (isset($_POST['submit'])) {
 }
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Registratie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
 <h2>Nieuwe gebruiker registeren</h2>
-<form action="<?= $_SERVER['REQUEST_URI']; ?>" method="post" enctype="multipart/form-data">
+<span class="errors"><?= isset($errors['db']) ? $errors['db'] : ''; ?></span>
+<form action="" method="post">
     <div class="data-field">
-        <label for="email">email</label>
-        <input id="email" type="email" name="email" value="<?= $email ?>"/>
-        <span class="errors"><?= isset($errors['email']) ? $errors['email'] : '' ?></span>
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email" value="<?= htmlentities($email); ?>"/>
+        <span class="errors"><?= isset($errors['email']) ? $errors['email'] : ''; ?></span>
     </div>
     <div class="data-field">
-        <label for="password">Password</label>
+        <label for="password">Wachtwoord</label>
         <input id="password" type="password" name="password"/>
-        <span class="errors"><?= isset($errors['password']) ? $errors['password'] : '' ?></span>
+        <span class="errors"><?= isset($errors['password']) ? $errors['password'] : ''; ?></span>
     </div>
     <div class="data-submit">
-        <input type="submit" name="submit" value="Save"/>
+        <input type="submit" name="submit" value="Registeer"/>
     </div>
 </form>
 </body>
 </html>
-
