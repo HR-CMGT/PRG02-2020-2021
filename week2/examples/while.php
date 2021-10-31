@@ -13,14 +13,16 @@ $counter = 0;
 </head>
 <body>
 <p>
-    <?php
-    while ($random < 90) {
+<?php
+    while ($random < 90)
+    {
         $counter++;
-        echo $counter . '. ';
+        echo $counter.'. ';
 
         $random = rand(0, 100);
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0 ; $i < 10 ; $i++)
+        {
             echo '*';
         }
         echo '<br>';

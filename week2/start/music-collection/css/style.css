@@ -3,23 +3,19 @@ label {
     width: 80px;
     font-weight: bold;
 }
-
 input {
     width: 200px;
 }
-
 input[type=submit] {
     width: auto;
 }
-
 footer {
 
 }
-
+/*Table*/
 td {
     padding: 0 10px;
 }
-
 td.image img {
     width: 50px;
     height: 50px;
@@ -34,6 +30,7 @@ tr.odd {
     background-color: lightgrey;
 }
 
+/* This would be the way to go without PHP */
 tbody tr:nth-child(odd) {
     background-color: lightgrey;
 }
